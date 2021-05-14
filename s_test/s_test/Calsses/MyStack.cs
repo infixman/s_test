@@ -20,5 +20,9 @@ namespace s_test.Calsses
         {
             myStack.Push(val);
         }
+
+        public void Pop()
+        {
+        }
     }
 }

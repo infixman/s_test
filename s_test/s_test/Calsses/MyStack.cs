@@ -23,6 +23,7 @@ namespace s_test.Calsses
 
         public void Pop()
         {
+            myStack.Pop();
         }
     }
 }

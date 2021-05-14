@@ -4,7 +4,7 @@ namespace s_test.Calsses
 {
     public class MyStack
     {
-        Stack<int> myStack;
+        public Stack<int> myStack;
 
         public MyStack()
         {

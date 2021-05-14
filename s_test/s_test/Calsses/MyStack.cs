@@ -25,5 +25,9 @@ namespace s_test.Calsses
         {
             myStack.Pop();
         }
+
+        public int Top()
+        {
+        }
     }
 }

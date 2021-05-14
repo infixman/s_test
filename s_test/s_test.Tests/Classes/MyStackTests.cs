@@ -28,5 +28,13 @@ namespace s_test.Tests.Classes
             actual.Pop();
             expected.ToExpectedObject().ShouldEqual(actual);
         }
+
+        [TestMethod]
+        public void Veriry_Top()
+        {
+            var expected = 4;
+            var actual = new MyStack(new int[] { 1, 4 }).Top();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

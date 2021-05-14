@@ -30,5 +30,9 @@ namespace s_test.Calsses
         {
             return myStack.Peek();
         }
+
+        public int GetMax()
+        {
+        }
     }
 }

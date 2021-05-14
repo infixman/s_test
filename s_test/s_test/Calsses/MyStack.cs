@@ -8,7 +8,7 @@ namespace s_test.Calsses
 
         public MyStack()
         {
-
+            myStack = new Stack<int>();
         }
 
         public MyStack(IEnumerable<int> sequence)
@@ -17,7 +17,8 @@ namespace s_test.Calsses
         }
 
         public void Push(int val)
-        { 
+        {
+            myStack.Push(val);
         }
     }
 }

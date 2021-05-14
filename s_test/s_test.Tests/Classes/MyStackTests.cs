@@ -10,12 +10,13 @@ namespace s_test.Tests.Classes
         [TestMethod]
         public void Veriry_Push()
         {
-            var expected = new MyStack(new int[] { 1, 3, 2, 4 });
+            var array = new int[] { 1, 3, 2, 4 };
+            var expected = new MyStack(array);
             var actual = new MyStack();
-            actual.Push(1);
-            actual.Push(3);
-            actual.Push(2);
-            actual.Push(4);
+            foreach (var val in array)
+            {
+                actual.Push(val);
+            }
             expected.ToExpectedObject().ShouldEqual(actual);
         }
 

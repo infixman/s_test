@@ -17,7 +17,14 @@ namespace s_test.Calsses
         public MyStack(IEnumerable<int> sequence)
         {
             myStack = new Stack<int>(sequence);
-            maxStack = new Stack<int>(sequence.OrderBy(x => x));
+            maxStack = new Stack<int>();
+            foreach (var val in sequence)
+            {
+                if (maxStack.Count == 0 || maxStack.Peek() < val)
+                {
+                    maxStack.Push(val);
+                }
+            }
         }
 
         public void Push(int val)

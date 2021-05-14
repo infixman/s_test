@@ -28,6 +28,7 @@ namespace s_test.Calsses
 
         public int Top()
         {
+            return myStack.Peek();
         }
     }
 }

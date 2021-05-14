@@ -41,8 +41,14 @@ namespace s_test.Tests.Classes
         public void Veriry_GetMax()
         {
             var expected = 4;
-            var actual = new MyStack(new int[] { 1, 4, 3, 2 }).GetMax();
-            Assert.AreEqual(expected, actual);
+            var actual = new MyStack();
+            actual.Push(1);
+            actual.Push(4);
+            actual.Push(5);
+            actual.Pop();
+            actual.Push(2);
+            actual.Push(3);
+            Assert.AreEqual(expected, actual.GetMax());
         }
     }
 }
